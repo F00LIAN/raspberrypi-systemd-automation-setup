@@ -7,26 +7,28 @@ This tutorial outlines the creation of an automation script within the raspberry
 
 <h2>Video Demonstration</h2>
 
-- ### [YouTube: How to Deploy on-premises Active Directory within Azure Compute](https://www.youtube.com)
+- ### [YouTube: How to automate coding scripts using raspberrypi](https://www.youtube.com)
 
 <h2>Environments and Technologies Used</h2>
 
-- Microsoft Azure (Virtual Machines/Compute)
+- RaspberryPi Device
+- Linux Terminal
 - Remote Desktop
-- Active Directory Domain Services
-- PowerShell
+- SSH
+- VIM
+- systemd configuration
 
 <h2>Operating Systems Used </h2>
 
-- Windows Server 2022
-- Windows 10 (21H2)
+- RaspberryPi OS
+- Windows 11
 
 <h2>High-Level Deployment and Configuration Steps</h2>
 
-- Step 1
-- Step 2
-- Step 3
-- Step 4
+- Step 1: Build RaspberryPi & Setup Operating System
+- Step 2: Prepare & Test Code Script
+- Step 3: Setup the Code Script Within VIM
+- Step 4: Save and Update SystemD Configuration File
 
 <h2>Deployment and Configuration Steps</h2>
 
