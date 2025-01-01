@@ -1,13 +1,9 @@
-# raspberrypi-systemd-setup
-Linux System-D service setup to automate scripts as a background task on a raspberrypi. 
-
 <p align="center">
-<img src="https://download.logo.wine/logo/Raspberry_Pi/Raspberry_Pi-Logo.wine.png" alt="raspberrypi-logo"/>
+<img src="https://upload.wikimedia.org/wikipedia/commons/d/d1/Raspberry_Pi_OS_Logo.png" alt="raspberrypi-logo"/>
 </p>
 
-<h1>On-premises Active Directory Deployed in the Cloud (Azure)</h1>
-This tutorial outlines the implementation of on-premises Active Directory within Azure Virtual Machines.<br />
-
+<h1>Fully Automate Code using RaspberryPi OS</h1>
+This tutorial outlines the creation of an automation script within the raspberrypi operating system. This is a cheaper alternative than to continuously pay for virtual machines or pay for cloud resources.<br />
 
 <h2>Video Demonstration</h2>
 
