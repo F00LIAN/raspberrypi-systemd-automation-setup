@@ -16,7 +16,7 @@ This tutorial outlines the creation of an automation script within the raspberry
 - Remote Desktop
 - SSH
 - VIM
-- systemd configuration
+- SystemD 
 
 <h2>Operating Systems Used </h2>
 
