@@ -99,7 +99,7 @@ This tutorial guides you through setting up an automated system configuration on
     ```bash
     #!/usr/bin/env bash
 
-    LOGFILE="/home/pi/auto_update.log"
+    LOGFILE="/home/pi/logs/auto_update.log"
 
     echo "===== Auto-Update Script Started at $(date) =====" >> "$LOGFILE"
 
