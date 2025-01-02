@@ -64,7 +64,7 @@ This tutorial guides you through setting up an automated system configuration on
   <img src="https://github.com/user-attachments/assets/7adaed39-1462-47de-99dc-72b10615b634" height="80%" width="80%" alt="SystemD Configuration"/>
 </p>
 <p>
-  Configure systemd by creating a service and timer unit file. The service file defines the script to be executed, while the timer file schedules the execution at desired intervals (e.g., every 15 hours). Use `sudo` privileges to edit these files and ensure they have the correct permissions.
+  Configure systemd by creating a service and timer unit file. The service file defines the script to be executed, while the timer file schedules the execution at desired intervals (e.g., every 24 hours). Use `sudo` privileges to edit these files and ensure they have the correct permissions.
 </p>
 <br />
 
