@@ -78,11 +78,12 @@ This tutorial guides you through setting up an automated system configuration on
 
 ### Step 2: Develop the Automation Script
 <p>
-  - **Create a directory for your scripts:**<br />
+  - ** Create a directory for your scripts: **<br />
     <code>mkdir -p ~/scripts</code><br />
   - **Create and edit your automation script:**<br />
     <code>nano ~/scripts/auto_update.sh</code><br />
   - **Add the following content:**<br />
+  
     ```bash
     #!/usr/bin/env bash
 
