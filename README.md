@@ -30,8 +30,9 @@ This tutorial guides you through setting up an automated system configuration on
 - **Step 3:** Configure SystemD Service and Timer
 - **Step 4:** Deploy and Monitor the Automated Service
 
-## Deployment and Configuration Steps
+# Deployment and Configuration Steps
 
+## SSH into RaspberryPi
 <p align="center">
   <img src="https://github.com/user-attachments/assets/297c9d8a-3c5a-4260-8c9f-cdea03dd0f78" height="80%" width="80%" alt="SSH into device over LAN"/>
 </p>
@@ -40,31 +41,42 @@ This tutorial guides you through setting up an automated system configuration on
 </p>
 <br />
 
+## Create and Add Script to Automate the Updates
 <p align="center">
-  <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Script Development in VIM"/>
+  <img src="https://github.com/user-attachments/assets/e89687ee-23ba-4984-ae37-e8fdfbdf4042" height="80%" width="80%" alt="Script Development in VIM"/>
 </p>
 <p>
   Develop your automation script using VIM or your preferred text editor. This script will handle system updates, maintenance tasks, and any other configurations you wish to automate. Ensure the script has executable permissions and is tested manually before integrating it with systemd.
 </p>
 <br />
 
+## Configure System-D Service File
 <p align="center">
-  <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="SystemD Configuration"/>
+  <img src="https://github.com/user-attachments/assets/766c34ff-1030-44ae-b6ee-389d7bfab866" height="80%" width="80%" alt="SystemD Configuration"/>
+</p>
+<p>
+  Configure systemd by creating a service and timer unit file. The service file defines the script to be executed, while the timer file schedules the execution at desired intervals (e.g., every 24 hours). Use `sudo` privileges to edit these files and ensure they have the correct permissions.
+</p>
+<br />
+
+## Configure System-D Timer File
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/7adaed39-1462-47de-99dc-72b10615b634" height="80%" width="80%" alt="SystemD Configuration"/>
 </p>
 <p>
   Configure systemd by creating a service and timer unit file. The service file defines the script to be executed, while the timer file schedules the execution at desired intervals (e.g., every 15 hours). Use `sudo` privileges to edit these files and ensure they have the correct permissions.
 </p>
 <br />
 
+## Deploy the .service and .timer files, restart daemon, and check logs
 <p align="center">
-  <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Monitoring Service Logs"/>
-</p>
+  <img src="https://github.com/user-attachments/assets/a79e1e0d-523c-48b0-b1f7-7a277c7a89d6" height="80%" width="80%" alt="Monitoring Service Logs"/>
 <p>
   After deploying the service and timer, monitor the logs to verify that the automation runs as expected. Utilize `journalctl` to check for any errors and ensure that the script executes successfully at each scheduled interval. Adjust configurations as needed based on the log outputs.
 </p>
 <br />
 
-## Detailed Steps
+# Detailed Steps
 
 ### Step 1: Set Up Raspberry Pi & Install Operating System
 <p>
@@ -130,8 +142,8 @@ This tutorial guides you through setting up an automated system configuration on
     [Service]
     Type=oneshot
     ExecStart=/home/pi/scripts/auto_update.sh
-    User=pi
-    Group=pi
+    User=pi #or your specific username
+    Group=pi #or your specific group
     Restart=on-failure
     Environment=PATH=/usr/bin:/bin
 
@@ -146,11 +158,11 @@ This tutorial guides you through setting up an automated system configuration on
   - **Add the following content:**<br />
     ```ini
     [Unit]
-    Description=Run auto-update service every 15 hours
+    Description=Run auto-update service every 24 hours
 
     [Timer]
     OnBootSec=5min
-    OnUnitActiveSec=15h
+    OnUnitActiveSec=24h
     Unit=auto-update.service
 
     [Install]
