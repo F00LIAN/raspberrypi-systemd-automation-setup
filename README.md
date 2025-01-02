@@ -182,19 +182,19 @@ This tutorial guides you through setting up an automated system configuration on
 
 ### Step 4: Deploy and Monitor the Automated Service
 <p>
-  - **Check Timer Status:**<br />
+  **Check Timer Status:**<br />
     <code>systemctl status auto-update.timer</code><br />
     Ensure it is active and the next run time is correct.<br /><br />
 
-  - **Check Service Logs:**<br />
+  **Check Service Logs:**<br />
     <code>journalctl -u auto-update.service -f</code><br />
     Monitor real-time logs to verify successful execution.<br /><br />
 
-  - **Review Script Logs:**<br />
+  **Review Script Logs:**<br />
     <code>cat /home/pi/auto_update.log</code><br />
     Confirm that updates and system checks are being logged as expected.<br /><br />
 
-  - **Troubleshoot Issues:**<br />
+  **Troubleshoot Issues:**<br />
     If the service fails to execute, check the following:<br />
     - Correct script path and permissions.<br />
     - Proper user and group settings in the service file.<br />
