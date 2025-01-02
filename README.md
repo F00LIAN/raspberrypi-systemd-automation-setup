@@ -1,6 +1,7 @@
 <p align="center">
 <img src="https://upload.wikimedia.org/wikipedia/commons/d/d1/Raspberry_Pi_OS_Logo.png" alt="raspberrypi-logo"/>
 </p>
+
 # Fully Automate System Configuration on Raspberry Pi OS
 
 This tutorial guides you through setting up an automated system configuration on Raspberry Pi OS using systemd services and timers. This approach offers a cost-effective alternative to relying on virtual machines or cloud resources for continuous automation tasks.<br />
