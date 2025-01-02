@@ -197,7 +197,7 @@ This tutorial guides you through setting up an automated system configuration on
     Monitor real-time logs to verify successful execution.<br /><br />
 
   **Review Script Logs:**<br />
-    <code>cat /home/pi/auto_update.log</code><br />
+    <code>cat /home/pi/logs/auto_update.log</code><br />
     Confirm that updates and system checks are being logged as expected.<br /><br />
 
   **Troubleshoot Issues:**<br />
