@@ -134,7 +134,8 @@ This tutorial guides you through setting up an automated system configuration on
   - **Open the service file for editing:**<br />
     <code>sudo nano /etc/systemd/system/auto-update.service</code><br />
   - **Add the following content:**<br />
-    ```ini
+    
+  ```ini
     [Unit]
     Description=Auto Update Raspberry Pi
     After=network.target
@@ -149,7 +150,8 @@ This tutorial guides you through setting up an automated system configuration on
 
     [Install]
     WantedBy=multi-user.target
-    ```
+
+```
   - **Save and exit.**<br /><br />
 
   <strong>Create the Timer File:</strong><br />
