@@ -131,8 +131,11 @@ This tutorial guides you through setting up an automated system configuration on
 ### Step 3: Configure SystemD Service and Timer
 <p>
   <strong>Create the Service File:</strong><br />
+  
   - **Open the service file for editing:**<br />
+  
     <code>sudo nano /etc/systemd/system/auto-update.service</code><br />
+    
   - **Add the following content:**<br />
     
   ```ini
@@ -184,6 +187,7 @@ This tutorial guides you through setting up an automated system configuration on
 
 ### Step 4: Deploy and Monitor the Automated Service
 <p>
+  
   **Check Timer Status:**<br />
     <code>systemctl status auto-update.timer</code><br />
     Ensure it is active and the next run time is correct.<br /><br />
