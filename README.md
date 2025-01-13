@@ -8,7 +8,7 @@ This tutorial guides you through setting up an automated system configuration on
 
 ## Video Demonstration
 
-- ### [YouTube: Automate System Updates on Raspberry Pi]()
+- ### [YouTube: Automate System Updates on Raspberry Pi](https://www.youtube.com/watch?v=e-RB83Nz74c)
 
 ## Environments and Technologies Used
 
